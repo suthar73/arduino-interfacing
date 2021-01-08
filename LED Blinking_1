@@ -1,0 +1,19 @@
+//--- LEDs Arduino Uno protoboard
+int led1=8, ledL=12, ledM=13, contar=1, limite = 5; 
+void setup() {
+  pinMode(ledL, OUTPUT);
+  digitalWrite(ledL, LOW);
+  pinMode(ledM, OUTPUT);
+  digitalWrite(ledM, LOW);
+  pinMode(led1, OUTPUT);
+}
+
+void loop() {
+  if (contar <= limite) {
+    digitalWrite(led1, HIGH);
+    delay(1000);
+    digitalWrite(led1, LOW);
+    delay(500);
+    ++contar;
+  }
+}

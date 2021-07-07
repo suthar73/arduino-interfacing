@@ -1,0 +1,31 @@
+
+// LED connected to pin 13 for fast blinks and slow blinks
+
+int led_13 = 13;
+
+// the setup routine runs once when press reset:
+void setup() 
+{
+  // initialize the digital pin as an output.
+  pinMode(led_13, OUTPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+ for (int i=0; i<5; i++)
+
+  {
+  digitalWrite (p13, HIGH); // turn the LED on (HIGH is the voltage level)
+  delay(500);		    // wait for half second
+  digitalWrite(p13, LOW);   // turn the LED off by making the voltage LOW
+  delay(500);               // wait for half second
+  } 
+
+  for (int i=0; i<5; i++)
+  {
+  digitalWrite (p13, HIGH); // turn the LED on (HIGH is the voltage level)
+  delay(2000);		    // wait for 2 seconds
+  digitalWrite(p13, LOW);   // turn the LED off by making the voltage LOW
+  delay(2000);              // wait for half second
+  }  
+}
